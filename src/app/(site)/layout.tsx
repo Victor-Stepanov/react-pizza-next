@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout";
 import "./globals.scss";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import { StoreProvider } from "@/redux/StoreProvider";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={nunito.className}>
-        <Layout>{children}</Layout>
+        <StoreProvider>
+          <Layout>{children}</Layout>
+        </StoreProvider>
       </body>
     </html>
   );

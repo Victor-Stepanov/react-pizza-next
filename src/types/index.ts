@@ -2,7 +2,7 @@ export interface IPizza {
   id: string;
   title: string;
   price: number;
-  imageUrl: string;
+  image: string;
   sizes: number[];
   types: number[];
   rating: number;

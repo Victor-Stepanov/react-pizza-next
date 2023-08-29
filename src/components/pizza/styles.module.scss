@@ -1,0 +1,40 @@
+@import "../../assets/abstracts/index.scss";
+
+.root {
+  width: 280px;
+  margin-bottom: 65px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      margin-bottom: 22px;
+      letter-spacing: 1%;
+      text-align: center;
+      @include font-style(1.3rem, 800, normal);
+    }
+
+    .image {
+      width: 260px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 17px;
+
+      .price {
+        letter-spacing: 0.33px;
+        @include font-style(1.4rem, 700, normal);
+      }
+    }
+  }
+}

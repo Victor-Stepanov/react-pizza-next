@@ -1,0 +1,29 @@
+.root {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header header'
+    'content content content '
+    'footer  footer footer';
+  max-width: 1400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+
+.header {
+  grid-area: header;
+}
+
+
+.content {
+  z-index: 0;
+  grid-area: content;
+  outline: none;
+}
+
+.footer {
+  grid-area: footer;
+}

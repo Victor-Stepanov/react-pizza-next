@@ -7,5 +7,5 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ className }) => {
-  return <footer className={cn(styles.root, className)}>Footer</footer>;
+  return <footer className={cn(styles.root, className)}></footer>;
 };

@@ -1,1 +1,49 @@
-.root{}
+@import "../../../assets/abstracts/index.scss";
+
+.root {
+  border-bottom: 1px solid $interface-color-light-gray;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .linkContainer {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      .headerTitle {
+        margin: 0;
+        color: $text-color-black;
+        letter-spacing: 0.24px;
+        text-align: left;
+        text-transform: uppercase;
+        @include font-style(1.5rem, 800, normal);
+      }
+
+      .headerDescripion {
+        color: $text-color-gray;
+        @include font-style(1rem, 400, normal);
+      }
+    }
+    .cartLink {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background-color: $interface-color-orange;
+
+      .delimiter {
+        width: 1px;
+        height: 25px;
+        margin-right: 6px;
+        margin-left: 6px;
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+}

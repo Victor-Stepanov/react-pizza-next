@@ -7,3 +7,8 @@ export interface IPizza {
   types: number[];
   rating: number;
 }
+
+export enum SelectorCategory {
+  Types = "types",
+  Size = "size",
+}

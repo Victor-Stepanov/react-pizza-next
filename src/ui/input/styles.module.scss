@@ -1,0 +1,15 @@
+@import "../../assets/abstracts/index.scss";
+
+.root {
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  outline: none;
+  color: $text-color-gray;
+  @include font-style(1rem, 400, normal);
+
+  &:focus {
+    border: 1px solid $interface-color-orange;
+  }
+}

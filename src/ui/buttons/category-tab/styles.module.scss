@@ -1,0 +1,16 @@
+@import "../../../assets/abstracts/index.scss";
+
+.root {
+  border-radius: 30px;
+  padding: 14px;
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+  @include font-style(1rem, 700, normal);
+  letter-spacing: 0.24px;
+}
+
+.active {
+  background-color: #282828;
+  color: $text-color-white;
+  transition: 0.3s linear;
+}

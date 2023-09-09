@@ -1,0 +1,14 @@
+@import "../../assets/abstracts/index.scss";
+
+.root {
+  text-decoration: none;
+  color: $text-color-white;
+  text-align: center;
+}
+
+.primary {
+  @include font-style(1rem, 700, normal);
+  letter-spacing: 0.24px;
+  border-radius: 30px;
+  padding: 13px;
+}

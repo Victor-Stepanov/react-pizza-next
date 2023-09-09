@@ -1,0 +1,14 @@
+@import "../../assets/abstracts/index.scss";
+
+.root {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  @include font-style(1rem, 400, normal);
+  color: $text-color-orange;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}

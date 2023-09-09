@@ -1,0 +1,27 @@
+@import "../../../assets/abstracts/index.scss";
+
+.root {
+  display: flex;
+  gap: 20px;
+
+  .amount {
+    letter-spacing: 0.22px;
+    @include font-style(1.4rem, 700, normal);
+  }
+}
+
+.primary {
+  border: 1px solid $interface-color-orange;
+  border-radius: 30px;
+  padding: 4px;
+
+  .amount {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: $interface-color-orange;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../assets/abstracts/index.scss";
+.root {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.primary {
+  @include font-style(1rem, 700, normal);
+  border-radius: 30px;
+  color: $interface-color-orange;
+  padding: 10px 17px;
+  background-color: inherit;
+  border: 1px solid $interface-color-orange;
+
+  &:hover {
+    background-color: $interface-color-orange;
+    color: $interface-color-white;
+    transition: background-color 0.3s ease-out;
+  }
+}
+
+.inline {
+  background-color: transparent;
+}

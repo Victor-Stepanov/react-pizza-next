@@ -1,7 +1,5 @@
-import { fetchPizzas } from "@/services";
+import { Pizzas } from "@/components/pizzas";
 
-export default async function Home() {
-  const pizzas = await fetchPizzas();
-  console.log(pizzas);
-  return <div>Home</div>;
+export default function Home() {
+  return <Pizzas />;
 }

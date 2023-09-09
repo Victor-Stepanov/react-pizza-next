@@ -6,7 +6,6 @@ export const fetchPizzaIfNotExists = createAsyncThunk(
     const response = await fetch(
       "https://645fb28afe8d6fb29e246f69.mockapi.io/items"
     );
-    const data = response.json();
-    return data;
+    return response.json();
   }
 );
